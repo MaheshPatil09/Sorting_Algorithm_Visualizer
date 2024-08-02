@@ -33,7 +33,7 @@ async function bubbleSort() {
             if (arr[j] > arr[j + 1]) {
                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
                 createChart(arr);
-                await delay(500); // Adjust the delay for speed of visualization
+                await delay(500); 
             }
         }
     }
@@ -52,7 +52,7 @@ async function insertionSort() {
         }
         arr[j + 1] = key;
         createChart(arr);
-        await delay(500); // Adjust the delay for speed of visualization
+        await delay(500); 
     }
     createChart(arr);
 }
@@ -67,7 +67,7 @@ async function mergeSort(arr) {
             if (left[0] <= right[0]) result.push(left.shift());
             else result.push(right.shift());
             createChart([...result, ...left, ...right]);
-            await delay(500); // Adjust the delay for speed of visualization
+            await delay(500); 
         }
         return result.concat(left, right);
     };
@@ -99,12 +99,12 @@ async function quickSort(arr, low = 0, high = arr.length - 1) {
                 i++;
                 [arr[i], arr[j]] = [arr[j], arr[i]];
                 createChart(arr);
-                await delay(500); // Adjust the delay for speed of visualization
+                await delay(500); 
             }
         }
         [arr[i + 1], arr[high]] = [arr[high], arr[i + 1]];
         createChart(arr);
-        await delay(500); // Adjust the delay for speed of visualization
+        await delay(500); 
         return i + 1;
     };
     
@@ -141,5 +141,5 @@ document.getElementById('reset').addEventListener('click', () => {
     createChart(data);
 });
     
-// Initial chart
+
 createChart(data);
