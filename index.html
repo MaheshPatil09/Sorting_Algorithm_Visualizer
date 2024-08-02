@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer</h1>
+        <div>
+            <label for="algorithm">Select Algorithm:</label>
+            <select id="algorithm">
+                <option value="bubbleSort">Bubble Sort</option>
+                
+<option value="insertionSort">Insertion Sort</option>
+<option value="mergeSort">Merge Sort</option>
+<option value="quickSort">Quick Sort</option>
+
+            </select>
+        </div>
+        <div>
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <canvas id="chart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
